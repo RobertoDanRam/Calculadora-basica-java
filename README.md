@@ -1,18 +1,26 @@
-## Getting Started
+# Calculadora Básica (Actividad 8)
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Programa de consola en Java que funciona como una calculadora interactiva. Permite al usuario realizar diversas operaciones matemáticas básicas con dos números de punto flotante, garantizando la estabilidad del programa mediante la validación continua de entradas.
 
-## Folder Structure
+**Autor:** Roberto Daniel Ramos Flores
 
-The workspace contains two folders by default, where:
+## Características Principales
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+- **Operaciones Aritméticas:** Soporta suma, resta, multiplicación y división.
+- **Operaciones Adicionales:** Permite elevar al cuadrado ambos números ingresados de forma simultánea.
+- **Prevención de Errores Matemáticos:** Incluye una validación específica para evitar la división entre cero.
+- **Validación de Entradas:** Utiliza el manejo de excepciones para asegurar que el usuario ingrese únicamente valores numéricos válidos, evitando que el programa colapse al introducir texto o caracteres especiales.
+- **Ejecución Continua:** Implementa un bucle interactivo que permite al usuario realizar múltiples operaciones consecutivas sin necesidad de reiniciar la aplicación.
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+## Tecnologías Utilizadas
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+- **Lenguaje:** Java
+- **Manejo de entrada:** `Scanner` (con lectura de caracteres y flotantes)
+- **Control de flujo:** `switch`, `while`
+- **Manejo de Excepciones:** `try-catch` (`InputMismatchException`)
 
-## Dependency Management
+## Estructura del Código
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+- `Calculadora.java`: Clase principal que contiene toda la lógica del programa.
+  - `main(String[] args)`: Controla el flujo principal, el menú de operaciones y el bucle de continuidad.
+  - `obtenerNumero(Scanner scanner, String mensaje)`: Método auxiliar modularizado que se encarga de solicitar un número al usuario y validar (mediante `try-catch`) que el formato
